@@ -1,0 +1,89 @@
+/* Общий стиль для всего окна */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f0f0f5);
+}
+
+/* Заголовки и текстовые элементы */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+/* Таблица */
+.table-view {
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-font-size: 13px;
+}
+
+.table-column-header {
+    -fx-background-color: linear-gradient(to bottom, #6baedc, #4292c6);
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-border-width: 0 1px 1px 0;
+    -fx-border-color: #ffffff;
+    -fx-alignment: center; /* Центрируем текст и числа в заголовках */
+}
+
+.table-cell {
+    -fx-alignment: center; /* Центрируем текст в ячейках */
+    -fx-padding: 5px;
+    -fx-font-size: 12px;
+}
+
+/* Кнопки */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #6baedc, #4292c6);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 15px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 13px;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #5a9bcf, #357abd);
+    -fx-cursor: hand;
+}
+
+.button:pressed {
+    -fx-background-color: #357abd;
+}
+
+/* Панели и макеты */
+.hbox, .vbox {
+    -fx-spacing: 15px;
+    -fx-alignment: center;
+}
+
+.stack-pane {
+    -fx-padding: 20px;
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #e6e6fa);
+}
+
+/* Диалоговые окна */
+.dialog-pane {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f8f8ff);
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.dialog-pane .content {
+    -fx-padding: 15px;
+}
+
+.dialog-pane .header {
+    -fx-background-color: linear-gradient(to bottom, #4292c6, #357abd);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+}
